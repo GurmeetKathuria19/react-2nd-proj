@@ -7,7 +7,7 @@ import img2 from "../assets/2.jpg"
 import img3 from "../assets/3.jpg"
 import img4 from "../assets/4.jpg"
 import img5 from "../assets/5.png"
-import { transform } from 'framer-motion'
+// import { transform } from 'framer-motion'
 
 
 
@@ -28,16 +28,16 @@ const Home = () => {
   )
 }
 
-const headingOptions = {
-    pos:"absolute",
-    left:"50%",
-    top:"50%",
-    transform:"translate(-50%,-50%)",
-    textTransform:"uppercase",
-    p:"4",
-    size:"2xl"
+// const headingOptions = {
+//     pos:"absolute",
+//     left:"50%",
+//     top:"50%",
+//     transform:"translate(-50%,-50%)",
+//     textTransform:"uppercase",
+//     p:"4",
+//     size:"2xl"
 
-}
+// }
 
 const MyCarousel = ()=> ( 
     <Carousel autoPlay infiniteLoop interval={"1000"} showStatus={false} showThumbs={false} showArrows={false}  >

@@ -1,7 +1,6 @@
 import {
     Avatar,
     Button,
-    Center,
     Container,
     Heading,
     Input,
