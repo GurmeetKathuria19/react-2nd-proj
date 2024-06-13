@@ -2,22 +2,27 @@ import React from 'react';
 import { useColorMode, useColorModeValue, IconButton } from '@chakra-ui/react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
-export const ColorModeSwitcher = props => {
+const ColorModeSwitcher = props => {
   const { toggleColorMode } = useColorMode();
-  const text = useColorModeValue('dark', 'light');
+
   const SwitchIcon = useColorModeValue(FaMoon, FaSun);
 
   return (
     <IconButton
-      size="md"
-      fontSize="lg"
-      aria-label={`Switch to ${text} mode`}
+
+
+
       variant="ghost"
       color="current"
-      marginLeft="2"
+      pos={"fixed"}
+      top={"4"} //this 4 is not 4px .. this is a unit of chakra ui .. 1 unit of chakra ui = 4px
+      right={"4"} //you can give this 4 in px also
       onClick={toggleColorMode}
+      zIndex={"overlay"}
       icon={<SwitchIcon />}
       {...props}
     />
   );
 };
+
+export default ColorModeSwitcher;
