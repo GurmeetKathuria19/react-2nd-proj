@@ -43,7 +43,7 @@ const MyCarousel = ()=> (
     <Carousel autoPlay infiniteLoop interval={"1000"} showStatus={false} showThumbs={false} showArrows={false}  >
 
         <Box w={"full"} h={"100vh"}>
-            <Img src={img1} />
+            <Img src={img1} w={"full"} h={"full"} objectFit={"cover"} />
             <Heading className='legend'>Watch The Future</Heading>
         </Box>
         <Box w={"full"} h={"100vh"}>
