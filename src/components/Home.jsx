@@ -47,15 +47,15 @@ const MyCarousel = ()=> (
             <Heading className='legend'>Watch The Future</Heading>
         </Box>
         <Box w={"full"} h={"100vh"}>
-            <Img src={img2} />
+            <Img src={img2} w={"full"} h={"full"} objectFit={"cover"}/>
             <Heading className='legend'>Future is Gaming</Heading>
         </Box>
         <Box w={"full"} h={"100vh"}>
-            <Img src={img3} />
+            <Img src={img3} w={"full"} h={"full"} objectFit={"cover"}/>
             <Heading className='legend'>Gaming on Console</Heading>
         </Box>
         <Box w={"full"} h={"100vh"}>
-            <Img src={img4} />
+            <Img src={img4} w={"full"} h={"full"} objectFit={"cover"}/>
             <Heading className='legend'>Night Life is Cool</Heading>
         </Box>
         {/* use this in heading if you want :---> bgColor={"blackAlpha.600"} color={"white"} {...headingOptions} */}
